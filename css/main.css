@@ -1,0 +1,388 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+    font-size: 16px;
+    font-family: 'tex_gyre_heros_cnregular';
+    color: #848484;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('../fonts/pacifico-webfont.woff2') format('woff2'),
+         url('../fonts/pacifico-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'texgyreheroscnitalic';
+    src: url('../fonts/texgyreheroscn-italic-webfont.woff2') format('woff2'),
+         url('../fonts/texgyreheroscn-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tex_gyre_heros_cnregular';
+    src: url('../fonts/texgyreheroscn-regular-webfont.woff2') format('woff2'),
+         url('../fonts/texgyreheroscn-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.clearfix:after {
+    content:'';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+header {
+    border-top: 10px solid #2ecc71;
+    background: url(../img/header-bg.jpg) no-repeat center top/cover;
+    height: 610px;
+}
+.container-header {
+    padding: 170px 0 175px 325px;
+}
+.logo {
+    font-size: 60px;
+    font-family: 'pacificoregular';
+    font-weight: normal;
+    padding-bottom: 65px;
+
+
+}
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+.logo span {
+    color: #2ecc71;
+}
+.heading {
+    font-size: 24px;
+    font-family: 'tex_gyre_heros_cnregular';
+    font-weight: normal;
+    color: #fff;
+    padding-bottom: 25px;
+    
+}
+
+.system li, .social__icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.system li a {
+    display: block;
+    text-indent: -9999px;
+    cursor: pointer;
+    width: 53px;
+    height: 53px;
+}
+.apple {
+    background: url('../img/sprite.png') no-repeat -123px -95px;
+    width: 53px;
+    height: 53px;
+    opacity: 0.5;
+}
+.apple:hover {
+    background: url('../img/sprite.png') no-repeat -123px -151px;
+    width: 53px;
+    height: 53px;
+    opacity: 1;
+}
+.android {
+    background: url('../img/sprite.png') no-repeat -4px -95px;
+    width: 54px;
+    height: 53px;
+    opacity: 0.5;
+}
+.android:hover {
+    background: url('../img/sprite.png') no-repeat -4px -151px;
+    width: 54px;
+    height: 53px;
+    opacity: 1;
+}
+.windows {
+    background: url('../img/sprite.png') no-repeat -64px -95px;
+    width: 53px;
+    height: 53px;
+    opacity: 0.5;
+}
+.windows:hover {
+    background: url('../img/sprite.png') no-repeat -64px -151px;
+    width: 53px;
+    height: 53px;
+    opacity: 1;
+}
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+section, footer {
+    padding: 60px 0;
+}
+.services__item {
+    width: 310px;
+    text-align: center;
+    float: left;
+}
+.services__item:last-child {
+    float: right;
+}
+
+.services__item:nth-child(2) {
+    margin-left: 120px;
+}
+h3 {
+    font-size: 22px;
+    font-family: 'ralewaysemibold';
+    font-weight: normal;
+    color: #222;
+
+
+}
+.services__item h3 {
+    padding: 30px 0;
+}
+.main, footer {
+    background: #e3e3e3;
+}
+.main__item {
+    float: left;
+    width: 535px;
+}
+.main__video {
+    float: right;
+
+}
+.main__item h3 {
+    padding-bottom: 30px;
+}
+form {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding-top: 30px;
+}
+input[type="email"] {
+  outline: none;
+  border: 1px solid #c8c8c8;
+  padding: 5px 0 5px 30px;
+  display: block;
+  width: 445px;
+  height: 55px;
+  background: #fff;
+  border-radius: 15px;
+  font-size: 18px;
+}
+button[type="submit"] {
+    position: absolute;
+    top: 31px;
+    right: 0px;
+    z-index: 9;
+    outline: none;
+    border: none;
+    display: inline-block;
+    background: #2ecc71;
+    color: #fff;
+    padding: 20px 55px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'ralewaybold';
+
+}
+blockquote {
+    font-family: 'texgyreheroscnitalic';
+    font-size: 18px;
+
+}
+h4 {
+    font-family: 'ralewaybold';
+    font-size: 18px;
+    color: #2e2e2e;
+    padding: 30px 0;
+}
+.gallery {
+    display: flex;
+    justify-content: space-between;
+
+}
+.gallery img {
+    opacity: 1;
+}
+.gallery img:hover {
+    opacity: 0.5;
+}
+
+.testimonials {
+    text-align: center;
+}
+.social__icons li a {
+    display: block;
+    text-indent: -9999px;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+
+}
+.twitter {
+    background: url('../img/sprite.png') no-repeat -41px -44px;
+    width: 34px;
+    height: 34px;
+}
+.facebook {
+    background: url('../img/sprite.png') no-repeat -189px -44px;
+    width: 34px;
+    height: 34px;
+}
+.pinterest {
+    background: url('../img/sprite.png') no-repeat -78px -44px;
+    width: 34px;
+    height: 34px;
+}
+.google {
+    background: url('../img/sprite.png') no-repeat -152px -44px;
+    width: 34px;
+    height: 34px;
+}
+.linkedin {
+    background: url('../img/sprite.png') no-repeat -115px -44px;
+    width: 34px;
+    height: 34px;
+}
+.youtube {
+    background: url('../img/sprite.png') no-repeat -4px -44px;
+    width: 34px;
+    height: 34px;
+}
+
+.twitter:hover {
+    background: url('../img/sprite.png') no-repeat -41px -7px;
+    width: 34px;
+    height: 34px;
+}
+.facebook:hover {
+    background: url('../img/sprite.png') no-repeat -189px -7px;
+    width: 34px;
+    height: 34px;
+}
+.pinterest:hover {
+    background: url('../img/sprite.png') no-repeat -78px -7px;
+    width: 34px;
+    height: 34px;
+}
+.google:hover {
+    background: url('../img/sprite.png') no-repeat -152px -7px;
+    width: 34px;
+    height: 34px;
+}
+.linkedin:hover {
+    background: url('../img/sprite.png') no-repeat -115px -7px;
+    width: 34px;
+    height: 34px;
+}
+.youtube:hover {
+    background: url('../img/sprite.png') no-repeat -4px -7px;
+    width: 34px;
+    height: 34px;
+}
+.social {
+    padding-top: 60px;
+}
+.social p {
+    padding: 20px 0 25px 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    color: #848484;
+    font-family: 'tex_gyre_heros_cnregular';
+    font-size: 16px;
+    padding-right: 38px;
+    display: block;
+
+}
